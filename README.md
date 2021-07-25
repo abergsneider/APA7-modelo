@@ -16,5 +16,5 @@ La mayoria de los archivos tienen ejemplos de como usarlos, junto a comentarios 
 Recomiendo el uso de [Overleaf](https://www.overleaf.com), el cual es un compilador con servidores en la nube el cual evita la necesidad de instalar LaTeX en un computador personal. A si mismo, permite la colaboracion entre varios colegas.
 
 # Preguntas?
-If you have a general question about LaTeX, I would recommend you do a Google search first and check out [the TeX Stack Exchange](http://tex.stackexchange.com/). If you have a question specifically about this template and its use, feel free to submit an issue using the "question" tag.
-Si tienes preguntas generales acerca de LaTex, recomiendo hacer una busqueda en Google. Otros recursos utiles son [the TeX Stack Exchange](http://tex.stackexchange.com/), al igual que el servidor de Discord [LaTeX Support - Discord](https://disboard.org/server/570670498309210112)
+Si tienes preguntas generales acerca de LaTeX, recomiendo hacer una busqueda en Google. Otros recursos utiles son [the TeX Stack Exchange](http://tex.stackexchange.com/), al igual que el servidor de Discord [LaTeX Support - Discord](https://disboard.org/server/570670498309210112)
+Para preguntas specificas acerca de este modelo y su uso, sientase libre de someter un issue usando el tag "pregunta"
