@@ -13,7 +13,6 @@ La mayoria de los archivos tienen ejemplos de como usarlos, junto a comentarios 
 - [ ] Be sure to cite your sources in ```bibliography.bib```. If you use Google Scholar to find your sources, it will provide you with ```bibtex``` output under the "cite" option.
 
 # Overleaf
-Want to take your thesis writing ***to the cloud?!?!*** Or, you know, don't want to install the ~3GB girthy monstrosity that is LaTeX on your pristine machine? Use [ShareLaTeX](https://www.sharelatex.com/).
 Recomiendo el uso de [Overleaf](https://www.overleaf.com), el cual es un compilador con servidores en la nube el cual evita la necesidad de instalar LaTeX en un computador personal. A si mismo, permite la colaboracion entre varios colegas.
 
 # Preguntas?
