@@ -5,7 +5,7 @@
 
 %------------------------------------------------------
 %	Preámbulo
-\documentclass[doc, 12pt, letterpaper, donotrepeattitle, floatsintext, natbib]{apa7}
+\documentclass[doc, 12pt, letterpaper, donotrepeattitle, floatsintext, apacite]{apa6}    % was apa7, apa6 works better for citations [AB]
 \usepackage[utf8]{inputenc}
 \usepackage{comment}
 \usepackage{marvosym}
@@ -14,6 +14,8 @@
 \usepackage[normalem]{ulem}
 \usepackage[spanish]{babel}
 \usepackage{setspace}
+%\usepackage{hyperref} % need to fix, causes issues [AB]
+
 \selectlanguage{spanish}
 \useunder{\uline}{\ul}{}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
@@ -28,7 +30,6 @@
 %\professor{Nombre del docente}
 %\duedate{Fecha}
 %------------------------------------------------------
-
 
 % De aquí para abajo empieza el documento [AB]
 \begin{document}
@@ -59,8 +60,9 @@
 \doublespacing % espacio entre renglón doble [AB]
 
 % Abstracto
-Para comenzar, es importante entender que la situación que está atravesando Colombia es quizá una de las situaciones más difíciles y complicadas que le ha tocado vivir al país en mucho tiempo. Difícil y complicada por la innumerable cantidad de factores que están metidos en este problema: aspectos económicos, éticos, legales, políticos, étnicos, y un gran etc. El objetivo de este ensayo es hacer una reflexión sobre la situación en Colombia y para tratar de responder a la pregunta... ¿qué puede hacerse a futuro para mejorar esta situación? Primero, hablaré un poco sobre la situación actual con el fin de contextualizar al leyente. Segundo, mencionaré algunos aspectos de las lecturas y temas relevantes vistos a lo largo del semestre y finalmente, me apoyaré de ciertas campañas y datos obtenidos de diversas fuentes para sustentar mis argumentos. Lo anterior, con el fin de dar una posible solución a esta situación.
-\noindent \maskCitet{cervantes1999}\\
+Para comenzar, es importante entender que la situación que está atravesando Colombia es quizá una de las situaciones más difíciles y complicadas que le ha tocado vivir al país en mucho tiempo. Difícil y complicada por la innumerable cantidad de factores que están metidos en este problema: aspectos económicos, éticos, legales, políticos, étnicos, y un gran etc. El objetivo de este ensayo es hacer una reflexión sobre la situación en Colombia y para tratar de responder a la pregunta... ¿qué puede hacerse a futuro para mejorar esta situación? Primero, hablaré un poco sobre la situación actual con el fin de contextualizar al leyente. Segundo, mencionaré algunos aspectos de las lecturas y temas relevantes vistos a lo largo del semestre y finalmente, me apoyaré de ciertas campañas y datos obtenidos de diversas fuentes para sustentar mis argumentos. Lo anterior, con el fin de dar una posible solución a esta situación. Y esto fue dicho en el documento de bla bla bla, \cite{lamport1986}
+
+
 
 \section{\large Sección 1}
 \subsection{Sub-sección 1} 
