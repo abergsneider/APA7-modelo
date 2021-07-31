@@ -14,11 +14,14 @@
 \usepackage[normalem]{ulem}
 \usepackage[spanish]{babel}
 \usepackage{setspace}
+\usepackage{xspace} %para forzar espacios [AB]
+\usepackage[colorinlistoftodos]{todonotes}  % Paquete para comentatios! [AB]
 %\usepackage{hyperref} % need to fix, causes issues [AB]
 
 \selectlanguage{spanish}
 \useunder{\uline}{\ul}{}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\latex}{\LaTeX\xspace}  % para simplificar el uso de \LaTeX
 %------------------------------------------------------
 %	Portada
 %\thispagestyle{empty}
@@ -60,20 +63,25 @@
 \doublespacing % espacio entre renglón doble [AB]
 
 % Abstracto
-Para comenzar, es importante entender que la situación que está atravesando Colombia es quizá una de las situaciones más difíciles y complicadas que le ha tocado vivir al país en mucho tiempo. Difícil y complicada por la innumerable cantidad de factores que están metidos en este problema: aspectos económicos, éticos, legales, políticos, étnicos, y un gran etc. El objetivo de este ensayo es hacer una reflexión sobre la situación en Colombia y para tratar de responder a la pregunta... ¿qué puede hacerse a futuro para mejorar esta situación? Primero, hablaré un poco sobre la situación actual con el fin de contextualizar al leyente. Segundo, mencionaré algunos aspectos de las lecturas y temas relevantes vistos a lo largo del semestre y finalmente, me apoyaré de ciertas campañas y datos obtenidos de diversas fuentes para sustentar mis argumentos. Lo anterior, con el fin de dar una posible solución a esta situación. Y esto fue dicho en el documento de bla bla bla, \cite{lamport1986}
+Aquí viene el abstracto \cite{lamport1986}
 
 
 
-\section{\large Sección 1}
-\subsection{Sub-sección 1} 
-En primer lugar, el pasado 28 de abril de 2021 miles de personas en Colombia y a nivel mundial salieron a las calles en forma de protesta y rechazo al proyecto de reforma tributaria del gobierno del actual presidente Iván Duque. Si bien todo empezó de manera pacífica al finalizar el día y con la primera noticia donde confirmaron la muerte de una persona todo se torno oscuro. En diferentes ciudades de Colombia como \ Bogotá, Medellín y Cali hubieron diferentes disturbios, incendios, actos de vandalismo y hasta heridos. Por lo tanto, ¿qué es lo que está pasando?...
+\section{\large Introducción}
+Aquí se escribe la introducción de la investigación. A continuación habrán ejemplos de varios comandos y características especiales de \latex
+
+\section{\large Algunos Ejemplos}
+
+\subsection{Sección}
+Usa los comandos \verb|\section| y \verb|\subsection| para organizar tu documento. \latex te organiza todo tu formato y numeraciones automáticamente. Usa los comandos \verb|\ref| y \verb|\label| para hacer referencias.
+
+\subsection{Comentarios} 
+He agregado el paquete \verb|\usepackage[colorinlistoftodos]{todonotes}| para permitir el uso de notas dentro del texto.
+\todo[inline, color=green!40]{Este es un ejemplo :)}
 
 
-\subsection{Aspectos económicos} 
-En primera instancia, el gobierno que preside el presidente Duque, justamente en el momento en que el país y el mundo entero, está pasando por una pandemia espantosa debido al COVID-19 que tenía y tiene nuestra economía por los suelos, decide aplicar una reforma fiscal que va directamente contra las posibilidades económicas no solamente de la clase media, sino de toda la nación. Escogió, por sugerencia de su entonces ministro de Hacienda, el señor Alberto Carrasquilla, el momento más inoportuno, tal vez porque hay un impresionante divorcio entre la clase dirigente y los requerimientos del ciudadano de a pie: la llamada clase media, y los estratos más bajos de la población.
-
-Cabe mencionar además que aunque se esté o no a favor de la Reforma Tributaria, lo importante acá es lo inoportuno del momento. Personalmente, creo que es necesaria una reforma porque, siendo Colombia un país del tercer mundo, que no tiene una producción comercial e industrial plenamente satisfactoria, sobrevivimos en buena parte mediante la venta de nuestros recursos naturales: petróleo, carbón, oro, níquel etc. Que le ayude a salir de su precariedad económica, con frecuencia tiene que sobrevivir de préstamos internacionales. A manera de información y con motivo de la caída de los precios del petróleo, los últimos datos según la revista La República muestran que, hasta el año 2020 la deuda externa acumulada de Colombia llegaba a los 142.800 millones de dólares (equivalente al 54.8
-\% de nuestro Producto interno bruto (PIB). Y que si o si hay que pagar esa deuda, sino a Colombia no se le volverá a prestar dinero.
+\subsection{Referencias} 
+Este documento de \latex esta configurado para usando el estándar de APA6 con modificaciones de APA7. \latex automáticamente genera la bibliografía en este estilo siempre y cuando la escribas dentro del archivo \textbf{mibibliografia.bib}. Usando el comando \verb|\cite| se genera la citación en paréntesis. \latex fue desarrollado por Leslie Lamport en 1986 \cite{lamport1986}.
 
 \subsection{Aspectos éticos}
 Si a lo anterior se le suma la situación de la preocupante corrupción que impera en el país, que según la revista Portafolio se habla de 50 billones de pesos por año, esto está creado el caldo de cultivo perfecto para un estallido social con consecuencias muy peligrosas. La nación, en términos generales, ha venido durante años soportando escándalo tras escándalo, donde es de conocimiento público la “evaporación” de miles y miles de millones de pesos gracias al desgreño administrativo. Pero eso sí, para beneficio de unos pocos y en donde brilla con luz propia la corrupción. Además, con el estallido de la fracasada Reforma Tributaria, todo el rencor, la ira y la desesperación estalló.
