@@ -18,3 +18,6 @@ Recomiendo el uso de [Overleaf](https://www.overleaf.com), el cual es un compila
 # Preguntas?
 Si tienes preguntas generales acerca de LaTeX, recomiendo hacer una busqueda en Google. Otros recursos utiles son [the TeX Stack Exchange](http://tex.stackexchange.com/), al igual que el servidor de Discord [LaTeX Support - Discord](https://disboard.org/server/570670498309210112)
 Para preguntas specificas acerca de este modelo y su uso, sientase libre de someter un issue usando el tag "pregunta"
+
+# Links de Referencia
+[Positioning images and tables](https://www.overleaf.com/learn/latex/Positioning_images_and_tables)

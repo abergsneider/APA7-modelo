@@ -5,7 +5,7 @@
 
 %------------------------------------------------------
 %	Preámbulo
-\documentclass[doc, 12pt, letterpaper, donotrepeattitle, floatsintext, apacite]{apa6}    % was apa7, apa6 works better for citations [AB]
+\documentclass[doc, 12pt, letterpaper, donotrepeattitle, floatsintext, apacite]{apa6}    % Was apa7, apa6 works better for citations [AB]
 \usepackage[utf8]{inputenc}
 \usepackage{comment}
 \usepackage{marvosym}
@@ -14,8 +14,9 @@
 \usepackage[normalem]{ulem}
 \usepackage[spanish]{babel}
 \usepackage{setspace}
-\usepackage{xspace} %para forzar espacios [AB]
-\usepackage[colorinlistoftodos]{todonotes}  % Paquete para comentatios! [AB]
+\usepackage{xspace} % Para forzar espacios [AB]
+\usepackage[colorinlistoftodos]{todonotes}  % Paquete para comentarios! [AB]
+\usepackage{amsmath} % Para Matrices y ecuaciones [AB]
 %\usepackage{hyperref} % need to fix, causes issues [AB]
 
 \selectlanguage{spanish}
@@ -25,10 +26,10 @@
 %------------------------------------------------------
 %	Portada
 %\thispagestyle{empty}
-\title{\Large Reflexión sobre la actual situación en Colombia}
+\title{\Large Manuscrito Estilo APA6/7}
 \shorttitle{Reflexión sobre la actual situación en Colombia}
-\author{Nombre del Autor/a} 
-\affiliation{Universidad de los Andes\\ Materia en Curso\\ Código: 123456789}
+\author{Nombre del Autor} 
+\affiliation{Nombre de Organización\\ Materia en Curso\\ Código: 123456789}
 %\course{Código: 201923806}
 %\professor{Nombre del docente}
 %\duedate{Fecha}
@@ -63,8 +64,7 @@
 \doublespacing % espacio entre renglón doble [AB]
 
 % Abstracto
-Aquí viene el abstracto \cite{lamport1986}
-
+Aquí viene el abstracto...
 
 
 \section{\large Introducción}
@@ -83,30 +83,76 @@ He agregado el paquete \verb|\usepackage[colorinlistoftodos]{todonotes}| para pe
 \subsection{Referencias} 
 Este documento de \latex esta configurado para usando el estándar de APA6 con modificaciones de APA7. \latex automáticamente genera la bibliografía en este estilo siempre y cuando la escribas dentro del archivo \textbf{mibibliografia.bib}. Usando el comando \verb|\cite| se genera la citación en paréntesis. \latex fue desarrollado por Leslie Lamport en 1986 \cite{lamport1986}.
 
-\subsection{Aspectos éticos}
-Si a lo anterior se le suma la situación de la preocupante corrupción que impera en el país, que según la revista Portafolio se habla de 50 billones de pesos por año, esto está creado el caldo de cultivo perfecto para un estallido social con consecuencias muy peligrosas. La nación, en términos generales, ha venido durante años soportando escándalo tras escándalo, donde es de conocimiento público la “evaporación” de miles y miles de millones de pesos gracias al desgreño administrativo. Pero eso sí, para beneficio de unos pocos y en donde brilla con luz propia la corrupción. Además, con el estallido de la fracasada Reforma Tributaria, todo el rencor, la ira y la desesperación estalló.
+\subsection{Cuadros e Imágenes}
+Usa el comando \verb|\begin{table}| para crear cuadros. En el Cuadro \ref{cuadro:ejemplo} se  observa un ejemplo.
+Para el uso de imagenes, usar el comando \verb|\begin{figure}|, es necesario tener el paquete \verb|\begin{figure}|. La Imagen \ref{imagen:ejemplo} da un ejemplo de su uso.
 
-Como consecuencia del anterior estado de cosas expuesto en el párrafo anterior, vino el paro, que en sus orígenes no tenía más impulso que la comentada ira, rencor y desesperación, pero que, con el paso de los días, encontró apoyo y guía en políticos de la corriente opositora del actual gobierno, paralelamente con dirigentes gremiales que piensan aprovecharse de estas circunstancias, para obtener dividendos económicos significativos.
+\begin{table}[h] % el [h] es para posicionar el cuadro aquí. Mas de esto en los links del README.md
+    \centering
+    \begin{tabular}{l|r}
+        Item & Quantity \\\hline
+        Widgets & 42 \\
+        Gadgets & 13
+    \end{tabular}
+    \caption{Aqui va la leyenda del cuadro}
+    \label{cuadro:ejemplo}
+\end{table}
 
-\subsection{Aspectos legales}
-Asimismo, es importante mencionar la grave situación de violación de Derechos Humanos en Colombia durante las jornadas de protestas. Esto debido a que tanto la policía como el Esmad han agredido de manera brutal a las personas que han participado en ellas y como ejemplo de la brutalidad y el exceso de fuerza y arbitrariedad por parte de la fuerza pública, la campaña Defender la libertad: ha registrado que hasta el día 3 de mayo del presente año un total de:
-%\begin{textit}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.7\textwidth]{Imágenes/ARB-7747.jpg}
+    \caption{Créditos: Andres Bergsneider}
+    \label{imagen:ejemplo}
+\end{figure}
+
+
+\subsection{Listas}
+Asimismo, hay varios tipos de listas. Lista tipo \textit{bullet-points} y listas enumeradas, usando los comandos \verb|\begin{itemize}| y \verb|\begin{enumerate}| respectivamente.
+
 \begin{itemize}
-    \item \textbf{18 personas han sido asesinadas} presuntamente por el accionar de la Policía.
-    \item \textbf{988 personas han sido detenidas}, gran parte de ellas por medio de procedimientos arbitrarios, siendo sometidas a tortura y/o tratos crueles.
-    \item \textbf{8 allanamientos} que fueron declarados ilegales, incluyendo las capturas asociadas.
-    \item \textbf{Se han presentado 398 denuncias} por abusos de poder, autoridad, agresiones y violencia policial.
-    \item \textbf{11 personas fueron víctimas de violencias} basadas en género ejercidas por la misma institución.
+    \item Así
+    \item Y así
 \end{itemize}
 
-%\end{textit}
+Listas enumeradas:
 
-Por otro lado, con el ánimo de salir del atolladero en que se encuentra el país, el presidente Duque ha llamado a conversaciones con los diferentes sectores que están involucrados en el paro, conversaciones que como todo conflicto que se desea solucionar, tiene una clara condición: el diálogo y la búsqueda de soluciones. Al diálogo, obviamente, se opone la imposición radical sin concesiones. A tal punto que, si quienes asisten a estos diálogos, no los aceptan, pretendiendo imponer, a como dé lugar, la totalidad de sus puntos de vista, aun en contraposición a las leyes y a la Constitución, el fracaso es concluyente. Con consecuencias como las que ya se observaron: suspensión del diálogo y retiro de los asistentes.
+\begin{enumerate}
+    \item Así
+    \item Y así
+\end{enumerate}
 
-\subsection{Aspectos políticos}
-Este aspecto, cuyo soporte, en parte, tiene que ver con lo ya expuesto en los Aspectos Éticos, hace que nos encontremos frente a un panorama desolador en donde diferentes corrientes políticas y económicas están enredadas buscando una esquiva solución, con el agravante de que no se tiene un norte definido. Por un lado, Duque, en su calidad de Presidente del país, incluyendo la clase dirigente donde desafortunadamente existen sujetos corruptos usufructuarios del mencionado desgreño administrativo y, por el otro lado, un grupo de parlamentarios de izquierda, comandados por Gustavo Petro (el contendor del actual Presidente en la pasada campaña presidencial). Y en ese mundo revuelto (para mirar con mucha preocupación), ahora tenemos los aspectos políticos en donde la pesca en río revuelto está a la orden del día: las derechas. que siempre han gobernado este país y las izquierdas que, a su vez, han estado en la oposición. Resumiendo: La derecha comandada por Duque, como cabeza visible, Versus la oposición de izquierda, dirigida por Gustavo Petro. Por último es importante no olvidar el problema de las etnias (mingas indígenas), que participan en los bloqueos, agravando el incierto panorama económico y social del país.
+\subsection{Ecuaciones}
+Por ultimo, les dejo el ejemplo de uso de ecuaciones, usando el comando \verb|\begin{equation}|.
 
-En conclusión, y con lo analizado previamente, podemos concluir que son muchos los factores que influyen en que hoy en día Colombia sea un país con tantos problemas. Factores que acrecientan la desigualdad, el odio, la ira, el rencor, el miedo, la pobreza, la inseguridad y la insatisfacción. Si bien es cierto, para nadie es un secreto que de proseguir así, no solamente es imposible que un país progrese, sino que los desequilibrios sociales generados por estas situaciones, pueden inducir a problemas superiores. Por lo tanto, se puede decir con certeza que Colombia debe llegar a la raíz de todos estos problemas y empezar hacer cambios que beneficien a toda la población. Cambios como: la eliminación de la violencia, mayores oportunidades laborales, justicia, cambios en el gobierno, menos desigualdad, la erradicación total de la corrupción ya que en un país como Colombia, en donde esto afecta en todos los niveles no habrá ningún progreso sin ningún cambio y se verá siempre como un intento fallido. Es por esta razón que en este ensayo más allá de apresar los causantes y señalar a un culpable, trae consigo la finalidad de introducir un debate acerca de cómo los colombianos podemos aportar. ¿Y usted qué puede hacer de manera individual para reconstruir a nuestro país?
+\begin{equation}
+    S = \frac{1}{90} \sum_{i=210}^{299} \left(\frac{|P^{(i)}_k \cap T^{(i)}_k|}{|P^{(i)}_k| + |T^{(i)}_k|} + \frac{|P^{(i)}_t \cap T^{(i)}_t|}{|P^{(i)}_t| + |T^{(i)}_t|}\right)
+    \label{dice}
+\end{equation}
+
+Y un ejemplo usando matrices, aquí es necesario el comando \verb|\begin{bmatrix}|:
+
+    \begin{equation}
+    \label{eqn:convolution}
+    \renewcommand{\arraystretch}{0.8}
+    \vec{x}*\vec{a} = X\vec{a} =
+        \begin{bmatrix}
+           x    &   y   &   x   &   0   &   0   &   0 \\
+           0    &   0   &   x   &   y   &   x   &   0 
+        \end{bmatrix}
+        \begin{bmatrix}
+           0\\
+           a\\
+           b\\
+           c\\
+           d\\
+           0
+        \end{bmatrix}
+    = 
+        \begin{bmatrix}
+           ay+bz\\
+           bx+cy+dz
+        \end{bmatrix}
+\end{equation}
 
 
 \newpage
